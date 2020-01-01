@@ -1,4 +1,7 @@
 var grille = document.getElementById("grille");
+var dep = document.getElementById("dep");
+var cpt = 0;
+var move = true;
 
 function melange() {
     for (i = 0; i < 20; i++) {
@@ -14,6 +17,8 @@ function melange() {
     document.getElementById("i7").src = "Images/7.png";
     document.getElementById("vide").src = "Images/vide.png";
     move = true;
+    cpt = 0;
+    dep.textContent = cpt;
 }
 
 melange();
@@ -34,6 +39,7 @@ function victoire() {
     document.getElementById("i7").src = "Images/v7.png";
     document.getElementById("vide").src = "Images/v8.png";
     alert('Victoire !!!');
+    move = false;
     return 0;
 }
 
@@ -63,6 +69,8 @@ function bouge(k) {
     var j = indice(8);
     if (a_cote(i,j)) {
         echange(i,j);
+        cpt++;
+        dep.textContent = cpt;
         victoire();
     }
 }
