@@ -3,8 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Taquin</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <header>Le jeu du taquin</header>
+
+        <div id="main">
+            <a id="reset">Recommencer</a>
+
+            <div id="grille" class="grille">
+                <div id="0" class="case"><img src="Images/0.png" height="100px" width="auto"></div>
+                <div id="1" class="case"><img src="Images/1.png" height="100px" width="auto"></div>
+                <div id="2" class="case"><img src="Images/2.png" height="100px" width="auto"></div>
+                <div id="3" class="case"><img src="Images/3.png" height="100px" width="auto"></div>
+                <div id="4" class="case"><img src="Images/4.png" height="100px" width="auto"></div>
+                <div id="5" class="case"><img src="Images/5.png" height="100px" width="auto"></div>
+                <div id="6" class="case"><img src="Images/6.png" height="100px" width="auto"></div>
+                <div id="7" class="case"><img src="Images/7.png" height="100px" width="auto"></div>
+                <div id="8" class="case"><img src="Images/vide.png" height="100px" width="auto"></div>
+            </div>
+
+            Nombre de déplacement : <span id="dep">0</span>
+        </div>
+
+        <footer>
+            © François Jiang
+        </footer>
+
+        <script type="text/javascript" src="taquin.js"></script>
     </body>
 </html>
