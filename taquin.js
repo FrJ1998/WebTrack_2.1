@@ -1,5 +1,6 @@
 var grille = document.getElementById("grille");
 var dep = document.getElementById("dep");
+var score = document.getElementById("score");
 var cpt = 0;
 var move = true;
 
@@ -39,6 +40,10 @@ function victoire() {
     document.getElementById("i7").src = "Images/v7.png";
     document.getElementById("vide").src = "Images/v8.png";
     alert('Victoire !!!');
+    let s = Number(score.textContent);
+    if (s === 0 || cpt < s) {
+        score.textContent = cpt;
+    }
     move = false;
     return 0;
 }

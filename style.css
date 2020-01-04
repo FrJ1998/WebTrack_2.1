@@ -32,6 +32,10 @@ a{
     color: white;
 }
 
+.texte{
+    margin: 5px;
+}
+
 footer{
     padding: 50px;
     background-color: #011533;
