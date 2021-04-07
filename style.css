@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+header{
+    padding: 50px;
+    background-color: #011533;
+    color: white;
+    font-size: 60px;
+}
+
+#main{
+    padding: 50px;
+    font-size: 30px;
+    color: #011533;
+}
+
+.grille{
+    display: grid;
+    grid-template-columns: 105px 105px 105px;
+    grid-template-rows: 105px 105px 105px;
+}
+
+.case {
+    margin: 5px;
+}
+
+a{
+    margin: 5px;
+    padding: 5px;
+    background-color: #011533;
+    color: white;
+}
+
+.texte{
+    margin: 5px;
+}
+
+footer{
+    padding: 50px;
+    background-color: #011533;
+    color: white;
+    text-align: center;
+}
